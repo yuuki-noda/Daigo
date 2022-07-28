@@ -1,0 +1,27 @@
+PODS:
+  - Daigo (0.1.0)
+  - Nimble (10.0.0)
+  - Quick (2.2.1)
+
+DEPENDENCIES:
+  - Daigo (from `../`)
+  - Nimble (~> 10.0.0)
+  - Quick (~> 2.2.0)
+
+SPEC REPOS:
+  trunk:
+    - Nimble
+    - Quick
+
+EXTERNAL SOURCES:
+  Daigo:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Daigo: c2ffb90d914e2ea69ca6f741e188cf2d041a2d16
+  Nimble: 5316ef81a170ce87baf72dd961f22f89a602ff84
+  Quick: f5754d69b7013f5864c29aab9ae6f0c79c5bc200
+
+PODFILE CHECKSUM: 95df226c975c6061460ca0de4f1f96f824a96351
+
+COCOAPODS: 1.11.3

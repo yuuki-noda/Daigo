@@ -1,0 +1,6 @@
+framework module Daigo {
+  umbrella header "Daigo-umbrella.h"
+
+  export *
+  module * { export * }
+}
