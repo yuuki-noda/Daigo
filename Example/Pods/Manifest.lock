@@ -1,17 +1,14 @@
 PODS:
   - Daigo (0.1.0)
-  - Nimble (10.0.0)
-  - Quick (2.2.1)
+  - SwiftFormat/CLI (0.49.11)
 
 DEPENDENCIES:
   - Daigo (from `../`)
-  - Nimble (~> 10.0.0)
-  - Quick (~> 2.2.0)
+  - SwiftFormat/CLI
 
 SPEC REPOS:
   trunk:
-    - Nimble
-    - Quick
+    - SwiftFormat
 
 EXTERNAL SOURCES:
   Daigo:
@@ -19,9 +16,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Daigo: c2ffb90d914e2ea69ca6f741e188cf2d041a2d16
-  Nimble: 5316ef81a170ce87baf72dd961f22f89a602ff84
-  Quick: f5754d69b7013f5864c29aab9ae6f0c79c5bc200
+  SwiftFormat: 281a1e03e57c55e788ad1653fd1aa174e90624d1
 
-PODFILE CHECKSUM: 95df226c975c6061460ca0de4f1f96f824a96351
+PODFILE CHECKSUM: dd76c2af9e45dd0ba7a773f2092d0c4aafbff663
 
 COCOAPODS: 1.11.3

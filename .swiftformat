@@ -1,0 +1,4 @@
+--exclude Pods
+--stripunusedargs closure-only
+--disable trailingCommas, redundantLet, wrapMultilineStatementBraces
+--enable isEmpty
