@@ -1,13 +1,16 @@
 PODS:
   - Daigo (0.1.0)
+  - Nuke (10.7.1)
   - SwiftFormat/CLI (0.49.11)
 
 DEPENDENCIES:
   - Daigo (from `../`)
+  - Nuke
   - SwiftFormat/CLI
 
 SPEC REPOS:
   trunk:
+    - Nuke
     - SwiftFormat
 
 EXTERNAL SOURCES:
@@ -15,9 +18,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Daigo: c2ffb90d914e2ea69ca6f741e188cf2d041a2d16
+  Daigo: 993626863ddd3fe5ffff1c0882f5d3c6b66bb4b0
+  Nuke: 279f17a599fd1c83cf51de5e0e1f2db143a287b0
   SwiftFormat: 281a1e03e57c55e788ad1653fd1aa174e90624d1
 
-PODFILE CHECKSUM: dd76c2af9e45dd0ba7a773f2092d0c4aafbff663
+PODFILE CHECKSUM: 2c311934dfc1a2c22e163145bce28708ede025da
 
 COCOAPODS: 1.11.3

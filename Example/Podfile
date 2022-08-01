@@ -5,6 +5,7 @@ platform :ios, '13.0'
 target 'Daigo_Example' do
   pod 'Daigo', :path => '../'
 
+  pod 'Nuke'
   pod 'SwiftFormat/CLI'
   
   target 'Daigo_Tests' do

@@ -9,13 +9,17 @@ import UIKit
 
 public final class DaigoCollectionView: UICollectionView {
     public enum ForwardDirection {
-        case right
-        case left
-        case up
+        case rightToLeft
+        case leftToRight
+        case vertical
     }
 
     public init(frame: CGRect, forwardDirection: ForwardDirection) {
         super.init(frame: frame, collectionViewLayout: DaigoViewBottomToTopLayout())
+        isUserInteractionEnabled = false
+        contentInsetAdjustmentBehavior = .never
+        showsHorizontalScrollIndicator = false
+        showsVerticalScrollIndicator = false
     }
 
     @available(*, unavailable)
