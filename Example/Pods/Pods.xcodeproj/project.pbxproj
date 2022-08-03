@@ -69,7 +69,6 @@
 		B1E7952C3058B36470BE73E071F5355A /* ImageEncoders+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22C72BE150C7946FEF0207B9F743608 /* ImageEncoders+Default.swift */; };
 		B1EDA288AF74F644812932AAB3283B62 /* ImageDecompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42BC2EBE7396DE2CC231DDC749D2DED /* ImageDecompression.swift */; };
 		B2CF8DEB39661714AF451F1FFBD4A76B /* AsyncTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869706E76EB07D3F6116AE26568C020B /* AsyncTask.swift */; };
-		BCB3B08E262DECBDF69BC1A578C7E1A3 /* DaigoContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347F7B0D3AED32AE4054EFC496E08486 /* DaigoContent.swift */; };
 		BD4DA8F2A44164BA33B9C64614B11C67 /* Graphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5309E58A81F275879E527FCABB4734CD /* Graphics.swift */; };
 		C0AE3B122BDCE6F77C9E3F9846541E27 /* ImageProcessors+Anonymous.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFEDDE23584D7908091B5B25C541D2F /* ImageProcessors+Anonymous.swift */; };
 		C207AFBBFAEE30C87D338225680837F3 /* RateLimiter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B593B90248FBC7246A18C9E41161A83 /* RateLimiter.swift */; };
@@ -149,7 +148,6 @@
 		2DAD7D76FC007F48AE48F2FD15BF01BB /* Nuke */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Nuke; path = Nuke.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		326C4B4DC92A69F4BA11DF2142791073 /* Deprecated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deprecated.swift; path = Sources/Internal/Deprecated.swift; sourceTree = "<group>"; };
 		32E8E09259656BF706F0B3838FF9F04E /* ImageProcessingOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageProcessingOptions.swift; path = Sources/Core/Processing/ImageProcessingOptions.swift; sourceTree = "<group>"; };
-		347F7B0D3AED32AE4054EFC496E08486 /* DaigoContent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DaigoContent.swift; path = Daigo/Classes/DaigoContent.swift; sourceTree = "<group>"; };
 		3C85D99A43D7964E93E9FF5103FA9589 /* Daigo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Daigo.modulemap; sourceTree = "<group>"; };
 		4294A0A28CBE88D37B6C87D45BB71B92 /* Nuke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Nuke.debug.xcconfig; sourceTree = "<group>"; };
 		443A130F999AB1EF8696C9CD5E558A90 /* Daigo.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = Daigo.podspec; sourceTree = "<group>"; tabWidth = 2; };
@@ -430,7 +428,6 @@
 			isa = PBXGroup;
 			children = (
 				F763B209AE8C5400D721B080F0DF8E53 /* DaigoCollectionView.swift */,
-				347F7B0D3AED32AE4054EFC496E08486 /* DaigoContent.swift */,
 				D56C235F85FB05E1D9559FADA8602A0A /* DaigoViewBottomToTopLayout.swift */,
 				57A90AFD1D8FCCC97337FB4B26CC0E56 /* DaigoViewController.swift */,
 				0266B2169855220D1604E51807A9538F /* Pod */,
@@ -755,7 +752,6 @@
 			files = (
 				FC960C588328BAB8FE1A3C027244DEF9 /* Daigo-dummy.m in Sources */,
 				14F866EA248B44BC2549AF092E745870 /* DaigoCollectionView.swift in Sources */,
-				BCB3B08E262DECBDF69BC1A578C7E1A3 /* DaigoContent.swift in Sources */,
 				432EC8E5946FE23C6C6148FCF4EAAC99 /* DaigoViewBottomToTopLayout.swift in Sources */,
 				57E758A241F75754603373C4EAD52F5C /* DaigoViewController.swift in Sources */,
 			);

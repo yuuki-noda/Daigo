@@ -17,20 +17,23 @@ struct MangaPage {
 
 final class ViewController: DaigoViewController {
     private let items: [MangaPage] = [
-        MangaPage(urlString: "https://placehold.jp/1290x720.png", aspectRatio: CGFloat(9) / CGFloat(16), urlScheme: nil),
         MangaPage(urlString: "https://placehold.jp/728x1030.png", aspectRatio: CGFloat(1030) / CGFloat(728), urlScheme: nil),
-        MangaPage(urlString: "https://placehold.jp/594x841.png", aspectRatio: CGFloat(841) / CGFloat(594), urlScheme: "custom scheme")
+        MangaPage(urlString: "https://placehold.jp/728x1030.png", aspectRatio: CGFloat(1030) / CGFloat(728), urlScheme: nil),
+        MangaPage(urlString: "https://placehold.jp/728x1030.png", aspectRatio: CGFloat(1030) / CGFloat(728), urlScheme: nil),
+        MangaPage(urlString: "https://placehold.jp/728x1030.png", aspectRatio: CGFloat(1030) / CGFloat(728), urlScheme: "custom scheme"),
     ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         let newAppearance = UINavigationBarAppearance()
         newAppearance.configureWithOpaqueBackground()
+        navigationController?.navigationBar.isTranslucent = true
         navigationController?.navigationBar.standardAppearance = newAppearance
         navigationController?.navigationBar.scrollEdgeAppearance = newAppearance
         navigationController?.navigationBar.scrollEdgeAppearance = newAppearance
         collectionView.register(PageCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
         collectionView.dataSource = self
+        delegate = self
         reloadData(completion: nil)
     }
 
@@ -41,12 +44,22 @@ final class ViewController: DaigoViewController {
 }
 
 extension ViewController: DIGViewerDelegate {
-    func daigoCollectionView(_ collectionView: DaigoCollectionView, visibleIndex indexPath: IndexPath) {
-        print("visibleIndex: \(indexPath.row)")
+    func aspectRatio(cellForItemAt indexPath: IndexPath) -> CGFloat {
+        guard items.count > indexPath.row else { return UIScreen.main.bounds.size.height / UIScreen.main.bounds.size.width }
+        return items[indexPath.row].aspectRatio
     }
 
-    func daigoCollectionView(_ collectionView: DaigoCollectionView, didSelectIndex indexPath: IndexPath) {
-        print("didSelectIndex: \(indexPath.row)")
+    func daigoCollectionView(_ collectionView: DaigoCollectionView, visibleIndex indexPath: IndexPath) {
+        print("visibleIndex: \(indexPath)")
+    }
+
+    func daigoCollectionView(_ collectionView: DaigoCollectionView, didSelectIndex indexPath: IndexPath) -> Bool {
+        guard items.count > indexPath.row else { return false }
+        if let urlSchemeString = items[indexPath.row].urlScheme {
+            print("didSelectIndex: \(urlSchemeString)")
+            return true
+        }
+        return false
     }
 }
 
@@ -62,13 +75,5 @@ extension ViewController: UICollectionViewDataSource {
             return cell
         }
         return UICollectionViewCell()
-    }
-}
-
-extension ViewController {
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        guard items.count > indexPath.row else { return collectionView.frame.size }
-        let height = collectionView.frame.size.width * items[indexPath.row].aspectRatio
-        return CGSize(width: collectionView.frame.size.width, height: height)
     }
 }

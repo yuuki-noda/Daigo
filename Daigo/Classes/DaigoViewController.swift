@@ -9,27 +9,46 @@ import UIKit
 
 public protocol DIGViewerDelegate: AnyObject {
     func daigoCollectionView(_ collectionView: DaigoCollectionView, visibleIndex indexPath: IndexPath)
-    func daigoCollectionView(_ collectionView: DaigoCollectionView, didSelectIndex indexPath: IndexPath)
+    /// return true -> toggle header, return false -> don't toggle header
+    func daigoCollectionView(_ collectionView: DaigoCollectionView, didSelectIndex indexPath: IndexPath) -> Bool
+    func aspectRatio(cellForItemAt indexPath: IndexPath) -> CGFloat
 }
 
 open class DaigoViewController: UIViewController {
     public let scrollView: UIScrollView = {
         let scrollView = UIScrollView()
         scrollView.contentInsetAdjustmentBehavior = .never
-        scrollView.canCancelContentTouches = true
-        scrollView.delaysContentTouches = true
-        scrollView.minimumZoomScale = 1
         scrollView.zoomScale = 1
-        scrollView.maximumZoomScale = 5
+        scrollView.minimumZoomScale = 1
+        scrollView.maximumZoomScale = 4
         scrollView.backgroundColor = .black
         scrollView.showsVerticalScrollIndicator = false
         scrollView.showsHorizontalScrollIndicator = false
         return scrollView
     }()
 
+    public let collectionView = DaigoCollectionView(frame: .zero, forwardDirection: .vertical)
+
     public weak var delegate: DIGViewerDelegate?
 
-    public let collectionView = DaigoCollectionView(frame: .zero, forwardDirection: .vertical)
+    private var headerHidden: Bool = true
+
+    private lazy var zoomGesture: UITapGestureRecognizer = {
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(doubleTap(_:)))
+        gesture.numberOfTapsRequired = 2
+        gesture.numberOfTouchesRequired = 1
+        gesture.cancelsTouchesInView = false
+        return gesture
+    }()
+
+    private lazy var toggleGesture: UITapGestureRecognizer = {
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(singleTap(_:)))
+        gesture.numberOfTapsRequired = 1
+        gesture.numberOfTouchesRequired = 1
+        gesture.cancelsTouchesInView = false
+        gesture.require(toFail: zoomGesture)
+        return gesture
+    }()
 
     override open func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +58,9 @@ open class DaigoViewController: UIViewController {
         scrollView.delegate = self
         view.addSubview(scrollView)
         scrollView.addSubview(collectionView)
-        navigationController?.navigationBar.isHidden = true
+        view.addGestureRecognizer(zoomGesture)
+        view.addGestureRecognizer(toggleGesture)
+        navigationController?.setNavigationBarHidden(true, animated: false)
     }
 
     override open func viewDidLayoutSubviews() {
@@ -72,15 +93,63 @@ open class DaigoViewController: UIViewController {
     }
 }
 
-extension DaigoViewController: UICollectionViewDelegateFlowLayout {}
+extension DaigoViewController {
+    open func hiddenBar(isHidden: Bool, animated: Bool) {
+        navigationController?.setNavigationBarHidden(isHidden, animated: false)
+    }
+}
+
+extension DaigoViewController {
+    @objc private func singleTap(_ sender: UITapGestureRecognizer) {
+        let point: CGPoint = sender.location(in: collectionView)
+        if let indexPath = collectionView.indexPathForItem(at: point),
+           let delegate = delegate {
+            if delegate.daigoCollectionView(collectionView, didSelectIndex: indexPath) {
+                return
+            } else {
+                headerHidden.toggle()
+                hiddenBar(isHidden: headerHidden, animated: true)
+            }
+        } else {
+            headerHidden.toggle()
+            hiddenBar(isHidden: headerHidden, animated: true)
+        }
+    }
+
+    @objc private func doubleTap(_ sender: UITapGestureRecognizer) {
+        if scrollView.zoomScale > 1 {
+            guard let indexPath = collectionView.indexPathForItem(at: sender.location(in: collectionView)) else { return }
+            guard let cell = collectionView.cellForItem(at: indexPath) else { return }
+            scrollView.zoom(to: cell.frame, animated: true)
+        } else {
+            let point = sender.location(in: collectionView)
+            scrollView.zoom(
+                to: CGRect(
+                    x: point.x - (scrollView.frame.size.width / 4),
+                    y: point.y - (scrollView.frame.size.width / 4),
+                    width: scrollView.frame.size.width / 2,
+                    height: scrollView.frame.size.height / 2
+                ),
+                animated: true
+            )
+        }
+    }
+}
+
+extension DaigoViewController: UICollectionViewDelegateFlowLayout {
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        guard let aspectRatio = delegate?.aspectRatio(cellForItemAt: indexPath) else { return UIScreen.main.bounds.size }
+        let height = UIScreen.main.bounds.size.width * aspectRatio
+        return CGSize(width: UIScreen.main.bounds.size.width, height: height)
+    }
+}
 
 extension DaigoViewController: UIScrollViewDelegate {
     public func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        guard let delegate = delegate else { return }
         let visibleRect = CGRect(origin: scrollView.contentOffset, size: scrollView.bounds.size)
         let visiblePoint = CGPoint(x: visibleRect.midX / scrollView.zoomScale, y: visibleRect.midY / scrollView.zoomScale)
         let indexPath = collectionView.indexPathForItem(at: visiblePoint) ?? IndexPath()
-        delegate.daigoCollectionView(collectionView, visibleIndex: indexPath)
+        delegate?.daigoCollectionView(collectionView, visibleIndex: indexPath)
     }
 
     public func viewForZooming(in scrollView: UIScrollView) -> UIView? {

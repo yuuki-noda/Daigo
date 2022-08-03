@@ -16,7 +16,8 @@ public final class DaigoCollectionView: UICollectionView {
 
     public init(frame: CGRect, forwardDirection: ForwardDirection) {
         super.init(frame: frame, collectionViewLayout: DaigoViewBottomToTopLayout())
-        isUserInteractionEnabled = false
+        backgroundColor = .black
+        isUserInteractionEnabled = true
         contentInsetAdjustmentBehavior = .never
         showsHorizontalScrollIndicator = false
         showsVerticalScrollIndicator = false
