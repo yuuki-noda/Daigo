@@ -23,6 +23,17 @@ final class ViewController: DaigoViewController {
         MangaPage(urlString: "https://placehold.jp/728x1030.png", aspectRatio: CGFloat(1030) / CGFloat(728), urlScheme: "custom scheme"),
     ]
 
+    private lazy var slider: UISlider = {
+        let slider: UISlider = .init()
+        slider.value = 1
+        slider.minimumValue = 0
+        slider.maximumValue = 1
+        slider.transform = CGAffineTransform(rotationAngle: -CGFloat.pi / 2)
+        slider.backgroundColor = UIColor.white
+        slider.addTarget(self, action: #selector(didChange(_:)), for: .valueChanged)
+        return slider
+    }()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         let newAppearance = UINavigationBarAppearance()
@@ -33,6 +44,7 @@ final class ViewController: DaigoViewController {
         navigationController?.navigationBar.scrollEdgeAppearance = newAppearance
         collectionView.register(PageCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
         collectionView.dataSource = self
+        view.addSubview(slider)
         delegate = self
         reloadData(completion: nil)
     }
@@ -40,6 +52,25 @@ final class ViewController: DaigoViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        slider.frame = CGRect(x: view.frame.size.width - 44,
+                              y: view.safeAreaInsets.top + (navigationController?.navigationBar.frame.size.height ?? 0),
+                              width: 44,
+                              height: view.frame.size.height - view.safeAreaInsets.top - view.safeAreaInsets.bottom - (navigationController?.navigationBar.frame.size.height ?? 0))
+    }
+
+    override func hiddenBar(isHidden: Bool, animated: Bool) {
+        super.hiddenBar(isHidden: isHidden, animated: animated)
+        slider.isHidden = isHidden
+    }
+}
+
+extension ViewController {
+    @objc private func didChange(_ slider: UISlider) {
+        setSliderValue(value: CGFloat(slider.value))
     }
 }
 

@@ -14,7 +14,10 @@ public final class DaigoCollectionView: UICollectionView {
         case vertical
     }
 
+    var direction: ForwardDirection
+
     public init(frame: CGRect, forwardDirection: ForwardDirection) {
+        direction = forwardDirection
         super.init(frame: frame, collectionViewLayout: DaigoViewBottomToTopLayout())
         backgroundColor = .black
         isUserInteractionEnabled = true

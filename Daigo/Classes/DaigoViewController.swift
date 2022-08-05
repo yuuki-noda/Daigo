@@ -31,21 +31,29 @@ open class DaigoViewController: UIViewController {
 
     public weak var delegate: DIGViewerDelegate?
 
+    public var currentIndex: Int = 0
+
+    /// vertical: top is 1, bottom is 0
+    public func setSliderValue(value: CGFloat) {
+        if collectionView.direction == .vertical {
+            let percent = 1 - value
+            let xPosition = scrollView.contentOffset.x
+            let yPosition = (collectionView.contentSize.height - scrollView.frame.size.height) * percent
+            let point = CGPoint(x: xPosition, y: yPosition)
+            scrollView.scrollRectToVisible(CGRect(origin: point, size: scrollView.frame.size), animated: true)
+        }
+    }
+
     private var headerHidden: Bool = true
 
     private lazy var zoomGesture: UITapGestureRecognizer = {
         let gesture = UITapGestureRecognizer(target: self, action: #selector(doubleTap(_:)))
         gesture.numberOfTapsRequired = 2
-        gesture.numberOfTouchesRequired = 1
-        gesture.cancelsTouchesInView = false
         return gesture
     }()
 
     private lazy var toggleGesture: UITapGestureRecognizer = {
         let gesture = UITapGestureRecognizer(target: self, action: #selector(singleTap(_:)))
-        gesture.numberOfTapsRequired = 1
-        gesture.numberOfTouchesRequired = 1
-        gesture.cancelsTouchesInView = false
         gesture.require(toFail: zoomGesture)
         return gesture
     }()
@@ -60,7 +68,7 @@ open class DaigoViewController: UIViewController {
         scrollView.addSubview(collectionView)
         view.addGestureRecognizer(zoomGesture)
         view.addGestureRecognizer(toggleGesture)
-        navigationController?.setNavigationBarHidden(true, animated: false)
+        hiddenBar(isHidden: true, animated: true)
     }
 
     override open func viewDidLayoutSubviews() {
@@ -73,6 +81,10 @@ open class DaigoViewController: UIViewController {
                                       y: 0,
                                       width: scrollView.frame.size.width,
                                       height: scrollView.frame.size.height)
+    }
+
+    open func hiddenBar(isHidden: Bool, animated: Bool) {
+        navigationController?.setNavigationBarHidden(isHidden, animated: false)
     }
 
     public func reloadData(completion: ((Bool) -> Void)?) {
@@ -90,12 +102,6 @@ open class DaigoViewController: UIViewController {
                                                                height: weakSelf.collectionView.contentSize.height)
                            completion?(finished)
                        })
-    }
-}
-
-extension DaigoViewController {
-    open func hiddenBar(isHidden: Bool, animated: Bool) {
-        navigationController?.setNavigationBarHidden(isHidden, animated: false)
     }
 }
 
@@ -150,9 +156,14 @@ extension DaigoViewController: UIScrollViewDelegate {
         let visiblePoint = CGPoint(x: visibleRect.midX / scrollView.zoomScale, y: visibleRect.midY / scrollView.zoomScale)
         let indexPath = collectionView.indexPathForItem(at: visiblePoint) ?? IndexPath()
         delegate?.daigoCollectionView(collectionView, visibleIndex: indexPath)
+        currentIndex = indexPath.row
     }
 
     public func viewForZooming(in scrollView: UIScrollView) -> UIView? {
-        return collectionView
+        if scrollView == self.scrollView {
+            return collectionView
+        } else {
+            return nil
+        }
     }
 }
