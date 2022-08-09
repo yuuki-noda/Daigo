@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Daigo'
-  s.version          = '0.0.1'
+  s.version          = '0.1.1'
   s.summary          = 'Daigo is vertical viewer'
 
 # This description is used to generate tags and improve search results.
@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/link-u/Daigo'
+  s.homepage         = 'https://github.com/yuuki-noda/Daigo'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'yuuki-noda' => 'yuuki.noda@link-u.co.jp' }
-  s.source           = { :git => 'https://github.com/link-u/Daigo.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/yuuki-noda/Daigo.git', :tag => s.version.to_s }
   s.swift_version = '4.0'
   s.ios.deployment_target = '13.0'
 
