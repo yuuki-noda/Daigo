@@ -84,7 +84,7 @@ open class DaigoViewController: UIViewController {
     }
 
     open func hiddenBar(isHidden: Bool, animated: Bool) {
-        navigationController?.setNavigationBarHidden(isHidden, animated: false)
+        navigationController?.setNavigationBarHidden(isHidden, animated: animated)
     }
 
     public func reloadData(completion: ((Bool) -> Void)?) {
@@ -94,6 +94,7 @@ open class DaigoViewController: UIViewController {
                        },
                        completion: { [weak self] finished in
                            guard let weakSelf = self else { return }
+                           self?.delegate?.daigoCollectionView(weakSelf.collectionView, visibleIndex: IndexPath(row: 0, section: 0))
                            self?.scrollView.contentSize = CGSize(width: weakSelf.collectionView.contentSize.width,
                                                                  height: weakSelf.collectionView.contentSize.height)
                            self?.collectionView.frame = CGRect(x: weakSelf.collectionView.frame.minX,
@@ -110,9 +111,7 @@ extension DaigoViewController {
         let point: CGPoint = sender.location(in: collectionView)
         if let indexPath = collectionView.indexPathForItem(at: point),
            let delegate = delegate {
-            if delegate.daigoCollectionView(collectionView, didSelectIndex: indexPath) {
-                return
-            } else {
+            if !delegate.daigoCollectionView(collectionView, didSelectIndex: indexPath) {
                 headerHidden.toggle()
                 hiddenBar(isHidden: headerHidden, animated: true)
             }
@@ -123,12 +122,18 @@ extension DaigoViewController {
     }
 
     @objc private func doubleTap(_ sender: UITapGestureRecognizer) {
+        let point = sender.location(in: collectionView)
         if scrollView.zoomScale > 1 {
-            guard let indexPath = collectionView.indexPathForItem(at: sender.location(in: collectionView)) else { return }
-            guard let cell = collectionView.cellForItem(at: indexPath) else { return }
-            scrollView.zoom(to: cell.frame, animated: true)
+            scrollView.zoom(
+                to: CGRect(
+                    x: 0,
+                    y: point.y - scrollView.frame.size.height / 2,
+                    width: scrollView.frame.size.width,
+                    height: scrollView.frame.size.height
+                ),
+                animated: true
+            )
         } else {
-            let point = sender.location(in: collectionView)
             scrollView.zoom(
                 to: CGRect(
                     x: point.x - (scrollView.frame.size.width / 4),

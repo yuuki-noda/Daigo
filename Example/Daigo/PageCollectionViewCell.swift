@@ -15,8 +15,6 @@ final class PageCollectionViewCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         contentView.addSubview(page)
-        contentView.layer.borderWidth = 2
-        contentView.layer.borderColor = UIColor.red.cgColor
     }
 
     @available(*, unavailable)
