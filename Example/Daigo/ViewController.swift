@@ -19,7 +19,7 @@ final class ViewController: DaigoViewController {
     private let items: [MangaPage] = [
         MangaPage(urlString: "https://placehold.jp/3d4070/ffffff/728x1030.png?text=B1", aspectRatio: CGFloat(1030) / CGFloat(728), urlScheme: nil),
         MangaPage(urlString: "https://placehold.jp/BBDEFB/ffffff/594x841.png?text=A1", aspectRatio: CGFloat(841) / CGFloat(594), urlScheme: nil),
-        MangaPage(urlString: "https://placehold.jp/EC407A/ffffff/515x728.png?text=B2", aspectRatio: CGFloat(728) / CGFloat(515), urlScheme: "custom scheme"),
+        MangaPage(urlString: "https://placehold.jp/EC407A/ffffff/515x728.png?text=B2", aspectRatio: CGFloat(728) / CGFloat(515), urlScheme: "https://www.google.com"),
         MangaPage(urlString: "https://placehold.jp/C5E1A5/ffffff/420x594.png?text=A2", aspectRatio: CGFloat(594) / CGFloat(420), urlScheme: nil)
     ]
 
@@ -98,8 +98,8 @@ extension ViewController {
 }
 
 extension ViewController: DIGViewerDelegate {
-    func aspectRatio(cellForItemAt indexPath: IndexPath) -> CGFloat {
-        guard items.count > indexPath.row else { return UIScreen.main.bounds.size.height / UIScreen.main.bounds.size.width }
+    func aspectRatio(cellForItemAt indexPath: IndexPath) -> CGFloat? {
+        guard items.count > indexPath.row else { return nil }
         return items[indexPath.row].aspectRatio
     }
 
@@ -110,8 +110,8 @@ extension ViewController: DIGViewerDelegate {
 
     func daigoCollectionView(_ collectionView: DaigoCollectionView, didSelectIndex indexPath: IndexPath) -> Bool {
         guard items.count > indexPath.row else { return false }
-        if let urlSchemeString = items[indexPath.row].urlScheme {
-            print("didSelectIndex: \(indexPath.row), urlSheme: \(urlSchemeString)")
+        if let urlSchemeString = items[indexPath.row].urlScheme, let url = URL(string: urlSchemeString) {
+            UIApplication.shared.open(url)
             return true
         }
         return false

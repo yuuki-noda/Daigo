@@ -11,7 +11,7 @@ public protocol DIGViewerDelegate: AnyObject {
     func daigoCollectionView(_ collectionView: DaigoCollectionView, visibleIndex indexPath: IndexPath)
     /// return true -> toggle header, return false -> don't toggle header
     func daigoCollectionView(_ collectionView: DaigoCollectionView, didSelectIndex indexPath: IndexPath) -> Bool
-    func aspectRatio(cellForItemAt indexPath: IndexPath) -> CGFloat
+    func aspectRatio(cellForItemAt indexPath: IndexPath) -> CGFloat?
 }
 
 open class DaigoViewController: UIViewController {
