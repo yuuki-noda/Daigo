@@ -15,16 +15,15 @@
 			dependencies = (
 			);
 			name = SwiftFormat;
-			productName = SwiftFormat;
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		0035039855B43C3437CB531FA6786272 /* DaigoCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF00C44406D4E468AC8B94D474C4F2B /* DaigoCollectionView.swift */; };
 		0189CC8E4185668FBDE64273D766B82E /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC9B5CF3AFFEE0D08A0BF07DC4F74EB /* LinkedList.swift */; };
 		027BAA511DFC6664A2CD1DE6C6F7B5C2 /* TaskLoadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AC749146168AE5F659DE8F8AB62BFC /* TaskLoadImage.swift */; };
 		055DB02A42AFE8D4816A9ECF6DEFB5A5 /* ImageProcessors+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD44CE5BE10C6A953E04556D89FF0041 /* ImageProcessors+Resize.swift */; };
 		0B8BDF0527002A057E52367978E85C78 /* ImageDecoders+Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E0AB90842DE0E38B4CDB21CD8B9DCC /* ImageDecoders+Video.swift */; };
-		14F866EA248B44BC2549AF092E745870 /* DaigoCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F763B209AE8C5400D721B080F0DF8E53 /* DaigoCollectionView.swift */; };
 		17A83C0396FA70E9074EE11FEA7FBCFD /* ImageProcessors+GaussianBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6DF0F4592F1EB10228E11DFB84DF93 /* ImageProcessors+GaussianBlur.swift */; };
 		1821465F4434FB006E0DF61A197E6EC8 /* DataCaching.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F63B26B1E1B71E5579361204A965C2 /* DataCaching.swift */; };
 		1F2F374519C1A91752E6C4E9535D665F /* ImageProcessingOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E8E09259656BF706F0B3838FF9F04E /* ImageProcessingOptions.swift */; };
@@ -34,19 +33,19 @@
 		27478038DD536715D2C3863BB13748C4 /* ImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002120688926027AED13A2D95B8F102D /* ImageViewExtensions.swift */; };
 		2ABD7270AD429F15A7730B7C65BC1AE6 /* ImageProcessors+Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E95E326E5A346AEE1BD086585A4B71 /* ImageProcessors+Circle.swift */; };
 		2D157E01ABC2D8D185B85AEA13390D1D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D1FFEC324445056330F4C9A74BE97F /* Extensions.swift */; };
+		327D23C0CED2F9978E66745BA4E0D722 /* DaigoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6062FCACDFBA36ACBBF43FEEE3630F /* DaigoViewController.swift */; };
 		37E09DD555BDA2A9C3D34AA77D901102 /* Pods-Daigo_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D57CFB00EB1496389AF57D562E61069 /* Pods-Daigo_Example-dummy.m */; };
 		38FB2C5A8088681A4531FE4A67F76E87 /* ImagePipelineCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF7E316F7368CBC034BFE169CAFC6C /* ImagePipelineCache.swift */; };
 		3BEDE9E249B3FA25D930C7413A84F2AC /* ImagePipelineTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865BCFADFD416ABD01A0BE4DB1E3E2BA /* ImagePipelineTask.swift */; };
 		3CE7461DB16ABE0FAAA2C186E36A58B6 /* Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326C4B4DC92A69F4BA11DF2142791073 /* Deprecated.swift */; };
 		3F9BFDE79B35A04FA6F8B0FE4D7618A5 /* Pods-Daigo_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A902AE8589809EEC44EDDDF7C90D18 /* Pods-Daigo_Tests-dummy.m */; };
 		431F743C86C401082324EFF2F14FD796 /* ImageDecoders+Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D18C9EDD5475A0A6D6F5EC5AC8FFB44 /* ImageDecoders+Empty.swift */; };
-		432EC8E5946FE23C6C6148FCF4EAAC99 /* DaigoViewBottomToTopLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56C235F85FB05E1D9559FADA8602A0A /* DaigoViewBottomToTopLayout.swift */; };
 		4330253F1E463D9748757B6BEE1F2535 /* Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9E765B91BF277CC0CAD6B849EA9B35 /* Combine.swift */; };
+		43DAFCC1121854A5491EF358CF3FA0A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
 		4A7CB521C043016A185EEBEFC5EC5216 /* ResumableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0E9EC4C179FAC1ABDD2511E5296AD8 /* ResumableData.swift */; };
 		4E950D6B3A68F14080C857270609C33D /* ImageRequestKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0D0ACB8CA102856BA185423A2DC15B /* ImageRequestKeys.swift */; };
-		506FAC75965C76797B9AAB629FBF978B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		577EB60CB00785E7B3E6254404050E37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		57E758A241F75754603373C4EAD52F5C /* DaigoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A90AFD1D8FCCC97337FB4B26CC0E56 /* DaigoViewController.swift */; };
+		506FAC75965C76797B9AAB629FBF978B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		577EB60CB00785E7B3E6254404050E37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
 		59F0C9C015498A536ACDA3465152B3B6 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96E57441C5D3F179E1534325474A061 /* ImageCache.swift */; };
 		696D9682A8835425BC446059F03FAD50 /* ImageProcessors+CoreImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23567B46FE5C433FAF4BB2DBA6445694 /* ImageProcessors+CoreImage.swift */; };
 		69932AD24C373D75B319AD3AE015C178 /* ImageEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80DF6B42ADE6F22FEBFC3DB9EC17E1B /* ImageEncoding.swift */; };
@@ -55,7 +54,9 @@
 		7033358D211B2AE2D65B332061703542 /* ImageEncoders+ImageIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C428DBC990798BB12106867457E019 /* ImageEncoders+ImageIO.swift */; };
 		70F3161360329C05C8D755B2E0EDBD22 /* Nuke-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 09F5DF5B0A70D8DE84336F3DFB27F64C /* Nuke-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		720F92D8F0638DA1662F4F1E5F902483 /* ImageProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA0A39C4BC5872B49BB3EDDCC5AA1F5 /* ImageProcessing.swift */; };
+		74F081E38799ECD8614E7B962C75C858 /* Daigo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CBFAF4B10FC7DCBD50EA548861A7DE /* Daigo-dummy.m */; };
 		773F7FE108EF9BB99F9CBF5F39371B5F /* ImageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB4E0DB024065DD9340B7EE6E1879CE /* ImageResponse.swift */; };
+		79B3882E7E7F40B8F58F1650A4338161 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
 		8A690C38D256E611163BD9C0AE0A2F9B /* ImagePrefetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20991EF3CEA8F19DC366DBC9BE61DA2E /* ImagePrefetcher.swift */; };
 		96381AD2EC7BFFC9F344DBA9349CF0AB /* ImageCaching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FA85B28B4F9BDE1DCF9F8D441D3FD5 /* ImageCaching.swift */; };
 		9944EA05103B0501237E601C2B811B98 /* ImageTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFFA2C0DBBF756737FC8DD839C5FD79 /* ImageTask.swift */; };
@@ -69,6 +70,7 @@
 		B1E7952C3058B36470BE73E071F5355A /* ImageEncoders+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22C72BE150C7946FEF0207B9F743608 /* ImageEncoders+Default.swift */; };
 		B1EDA288AF74F644812932AAB3283B62 /* ImageDecompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42BC2EBE7396DE2CC231DDC749D2DED /* ImageDecompression.swift */; };
 		B2CF8DEB39661714AF451F1FFBD4A76B /* AsyncTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869706E76EB07D3F6116AE26568C020B /* AsyncTask.swift */; };
+		B593000F5256F0A342B26261A62FC594 /* Daigo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F0C8485AC53963522D991F405FC34E9 /* Daigo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BD4DA8F2A44164BA33B9C64614B11C67 /* Graphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5309E58A81F275879E527FCABB4734CD /* Graphics.swift */; };
 		C0AE3B122BDCE6F77C9E3F9846541E27 /* ImageProcessors+Anonymous.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFEDDE23584D7908091B5B25C541D2F /* ImageProcessors+Anonymous.swift */; };
 		C207AFBBFAEE30C87D338225680837F3 /* RateLimiter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B593B90248FBC7246A18C9E41161A83 /* RateLimiter.swift */; };
@@ -76,12 +78,10 @@
 		CD5C749782313BCA361B960D1A145160 /* AVDataAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAA34F67C072C9766836FB045DB96D4 /* AVDataAsset.swift */; };
 		CF77A2024C96B3B6EEA975AF69590A3D /* TaskFetchOriginalImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9F0F5B8CE7F03CADC585520480A186 /* TaskFetchOriginalImageData.swift */; };
 		CFC8ED17416BBED9423A805887700F28 /* DataLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BFD84A09C846FCC37AD31C22832B6D /* DataLoading.swift */; };
-		D2D88DB04D8FCF151DADE8F2E77890A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		D508268CE889A554DB7555DEAA2D34DA /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A80298480BF8FBF5FC12C4194B062C2 /* Log.swift */; };
 		D531783D0BCD5854815AC824CAD56C45 /* DataCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64480E2190C1DB118653A380E0162CEB /* DataCache.swift */; };
-		D8299BEB5A3CAFEE190A2F8D2FD8D0CC /* Daigo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 228FEE2C50F7E4419E1FC51BD17A7D11 /* Daigo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DBBEBCE04C91414572AE60714A876047 /* ImagePublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61F7CCBCAFDA66FDC436C695F1C7BD3 /* ImagePublisher.swift */; };
-		DF8F1A677AF4C989264F96181EA75C6A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		DF8F1A677AF4C989264F96181EA75C6A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
 		E295B872DAEC1B42A73D1D2F5EBEFBAF /* FetchImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3C12C02AB712E9546143071C540622 /* FetchImage.swift */; };
 		E3224FCFD43E43ABE36EA8EF94AC82D5 /* Pods-Daigo_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FF0D1241F31137F87ACF4E8A0F40449 /* Pods-Daigo_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E74667B2CC4461D370AD6C7F5AD56FF2 /* ImageEncoders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EE4898C99ECBDA539B207D58B5162C /* ImageEncoders.swift */; };
@@ -90,19 +90,12 @@
 		ECA9A70EC291E689EC134D65A561F53B /* Nuke-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E0434BFD150EBBBB271129EF00A09E /* Nuke-dummy.m */; };
 		F122C7C42ECCDB396F0D04AA60A0B573 /* Pods-Daigo_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EADE08472540AE7A3EEFAE7D04A6E3C /* Pods-Daigo_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F383612D0A15B5CDE5981FBF18F76B6D /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AC827379B252B91CD7D72E3889D5D0 /* DataLoader.swift */; };
+		F3D4AB8984D2A4153DF31E4DAE19EACD /* DaigoViewBottomToTopLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4593007696912BF7FA8D24DB931790C1 /* DaigoViewBottomToTopLayout.swift */; };
 		FAFAEDFD5D5488B88E02C49904B3356C /* Allocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = B350D7FC67E8661F6B766BBBA96E60B8 /* Allocations.swift */; };
 		FB98B8EFA23B7012369CA0FDA64118C0 /* OperationTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD615BB446B36288B297AAEB208FFC1E /* OperationTask.swift */; };
-		FC960C588328BAB8FE1A3C027244DEF9 /* Daigo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C5DE7E4BA56F9F57761B94F27F1477B5 /* Daigo-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0A969916CF1220CB86F747FF1B733804 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1CD0618C486973D5588EF20D2E8C0AEA;
-			remoteInfo = SwiftFormat;
-		};
 		0F229A09AFCA2D1BD8718D522A05850F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -110,19 +103,26 @@
 			remoteGlobalIDString = ECC35187B27C4EA3E7E887E2C6C4233C;
 			remoteInfo = "Pods-Daigo_Example";
 		};
-		1F1DD5D4DEADAF11759FDBFF75456F9E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F6869AC2056DCC8BF96A261FF20F6577;
-			remoteInfo = Daigo;
-		};
-		5A42BF37D73D05A15A93C9DB1A7F4307 /* PBXContainerItemProxy */ = {
+		6CF9CF2A6D5337DAC8C4233FBA2D8106 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 062A64896E847A6749F58B6BA9A931B1;
 			remoteInfo = Nuke;
+		};
+		7881A0AA9D687FB70DB216A62A4A6E5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CD0618C486973D5588EF20D2E8C0AEA;
+			remoteInfo = SwiftFormat;
+		};
+		8BB9B8082210B4ACCE0F21974FF10367 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6869AC2056DCC8BF96A261FF20F6577;
+			remoteInfo = Daigo;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -131,31 +131,32 @@
 		006702A3350F7C9335A487A2D8F58DD2 /* SwiftFormat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftFormat.debug.xcconfig; sourceTree = "<group>"; };
 		02985B0E6E3D8A6A3C0584BF866F3EFE /* ImagePipelineConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagePipelineConfiguration.swift; path = Sources/Core/ImagePipelineConfiguration.swift; sourceTree = "<group>"; };
 		059B1540422F48B7C2146B89B4B87FF9 /* SwiftFormat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftFormat.release.xcconfig; sourceTree = "<group>"; };
-		07A797C931044947EDF9EFB96C3FBA36 /* Daigo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Daigo.release.xcconfig; sourceTree = "<group>"; };
+		05AC5E355FD30608BF50B34054F2A1DA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		05B03628809A3691D8AF8446C08FEDB9 /* Daigo-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Daigo-prefix.pch"; sourceTree = "<group>"; };
 		09F5DF5B0A70D8DE84336F3DFB27F64C /* Nuke-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Nuke-umbrella.h"; sourceTree = "<group>"; };
 		0FB4E0DB024065DD9340B7EE6E1879CE /* ImageResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageResponse.swift; path = Sources/Core/ImageResponse.swift; sourceTree = "<group>"; };
-		1E9FA82CE2CD2D962E6B57275CF0D500 /* Daigo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Daigo.debug.xcconfig; sourceTree = "<group>"; };
+		1E6062FCACDFBA36ACBBF43FEEE3630F /* DaigoViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DaigoViewController.swift; path = Daigo/Classes/DaigoViewController.swift; sourceTree = "<group>"; };
 		1FF0D1241F31137F87ACF4E8A0F40449 /* Pods-Daigo_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Daigo_Tests-umbrella.h"; sourceTree = "<group>"; };
 		20595353F04B1C6359867C51012C24DE /* Pods-Daigo_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Daigo_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		20991EF3CEA8F19DC366DBC9BE61DA2E /* ImagePrefetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagePrefetcher.swift; path = Sources/Core/Prefetching/ImagePrefetcher.swift; sourceTree = "<group>"; };
 		20D87843DADF06A9B9A85796D548E23A /* Pods-Daigo_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Daigo_Tests-Info.plist"; sourceTree = "<group>"; };
 		21762E14259708E9703B130A9EF8091B /* Operation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operation.swift; path = Sources/Internal/Operation.swift; sourceTree = "<group>"; };
-		228FEE2C50F7E4419E1FC51BD17A7D11 /* Daigo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Daigo-umbrella.h"; sourceTree = "<group>"; };
 		23567B46FE5C433FAF4BB2DBA6445694 /* ImageProcessors+CoreImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ImageProcessors+CoreImage.swift"; path = "Sources/Core/Processing/ImageProcessors+CoreImage.swift"; sourceTree = "<group>"; };
 		2574851C32CFD155362DA952AE1AB153 /* Pods-Daigo_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Daigo_Example-Info.plist"; sourceTree = "<group>"; };
+		2865199C293244BF901C251251BF58DB /* Daigo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Daigo-Info.plist"; sourceTree = "<group>"; };
 		28EE4898C99ECBDA539B207D58B5162C /* ImageEncoders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageEncoders.swift; path = Sources/Core/Encoding/ImageEncoders.swift; sourceTree = "<group>"; };
 		2C72B39E8CB0B77B243F306D895C5892 /* ImagePipeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagePipeline.swift; path = Sources/Core/ImagePipeline.swift; sourceTree = "<group>"; };
 		2DAD7D76FC007F48AE48F2FD15BF01BB /* Nuke */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Nuke; path = Nuke.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F0C8485AC53963522D991F405FC34E9 /* Daigo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Daigo-umbrella.h"; sourceTree = "<group>"; };
 		326C4B4DC92A69F4BA11DF2142791073 /* Deprecated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deprecated.swift; path = Sources/Internal/Deprecated.swift; sourceTree = "<group>"; };
 		32E8E09259656BF706F0B3838FF9F04E /* ImageProcessingOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageProcessingOptions.swift; path = Sources/Core/Processing/ImageProcessingOptions.swift; sourceTree = "<group>"; };
-		3C85D99A43D7964E93E9FF5103FA9589 /* Daigo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Daigo.modulemap; sourceTree = "<group>"; };
+		4146409B699E585C8EC313E931E0736E /* Daigo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Daigo.debug.xcconfig; sourceTree = "<group>"; };
 		4294A0A28CBE88D37B6C87D45BB71B92 /* Nuke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Nuke.debug.xcconfig; sourceTree = "<group>"; };
-		443A130F999AB1EF8696C9CD5E558A90 /* Daigo.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = Daigo.podspec; sourceTree = "<group>"; tabWidth = 2; };
+		4593007696912BF7FA8D24DB931790C1 /* DaigoViewBottomToTopLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DaigoViewBottomToTopLayout.swift; path = Daigo/Classes/DaigoViewBottomToTopLayout.swift; sourceTree = "<group>"; };
 		45E0AB90842DE0E38B4CDB21CD8B9DCC /* ImageDecoders+Video.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ImageDecoders+Video.swift"; path = "Sources/Core/Decoding/ImageDecoders+Video.swift"; sourceTree = "<group>"; };
 		482135788328C96B6044CF2BD2357B6C /* Nuke-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Nuke-Info.plist"; sourceTree = "<group>"; };
 		4D57CFB00EB1496389AF57D562E61069 /* Pods-Daigo_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Daigo_Example-dummy.m"; sourceTree = "<group>"; };
 		5309E58A81F275879E527FCABB4734CD /* Graphics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Graphics.swift; path = Sources/Internal/Graphics.swift; sourceTree = "<group>"; };
-		57A90AFD1D8FCCC97337FB4B26CC0E56 /* DaigoViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DaigoViewController.swift; path = Daigo/Classes/DaigoViewController.swift; sourceTree = "<group>"; };
 		5840DD9C08B0079CC6B1E7EB068D8C3F /* Daigo */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Daigo; path = Daigo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A80298480BF8FBF5FC12C4194B062C2 /* Log.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Log.swift; path = Sources/Internal/Log.swift; sourceTree = "<group>"; };
 		5BAA34F67C072C9766836FB045DB96D4 /* AVDataAsset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AVDataAsset.swift; path = Sources/Internal/AVDataAsset.swift; sourceTree = "<group>"; };
@@ -167,8 +168,6 @@
 		65CD72ADFFC44B9F8FE2C9990F6E6F8D /* ImageProcessors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageProcessors.swift; path = Sources/Core/Processing/ImageProcessors.swift; sourceTree = "<group>"; };
 		6774BFF0599529B6582D16F711D647E2 /* ImagePipelineDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagePipelineDelegate.swift; path = Sources/Core/ImagePipelineDelegate.swift; sourceTree = "<group>"; };
 		6D3C12C02AB712E9546143071C540622 /* FetchImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FetchImage.swift; path = Sources/UI/FetchImage.swift; sourceTree = "<group>"; };
-		6E97BD1CE0BCFA16C6A5D461D6A383CF /* Daigo-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Daigo-prefix.pch"; sourceTree = "<group>"; };
-		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		78E973AF717E6BB3604323C3D258FC9F /* ImageRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageRequest.swift; path = Sources/Core/ImageRequest.swift; sourceTree = "<group>"; };
 		7B593B90248FBC7246A18C9E41161A83 /* RateLimiter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RateLimiter.swift; path = Sources/Internal/RateLimiter.swift; sourceTree = "<group>"; };
 		7D9BB8E06BF59EF2011F935929DE632A /* Pods-Daigo_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Daigo_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -178,20 +177,18 @@
 		865BCFADFD416ABD01A0BE4DB1E3E2BA /* ImagePipelineTask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagePipelineTask.swift; path = Sources/Core/Tasks/ImagePipelineTask.swift; sourceTree = "<group>"; };
 		869706E76EB07D3F6116AE26568C020B /* AsyncTask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncTask.swift; path = Sources/Core/Tasks/AsyncTask.swift; sourceTree = "<group>"; };
 		87AC827379B252B91CD7D72E3889D5D0 /* DataLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataLoader.swift; path = Sources/Core/Loading/DataLoader.swift; sourceTree = "<group>"; };
-		87E94ECC829CA1C12D759BDC657E4EAD /* Daigo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Daigo-Info.plist"; sourceTree = "<group>"; };
-		8A0F70D6A80C8B4A8FEDB080EBA8F3A6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8C96EBE3C54839B3B316ED137245F3B4 /* Pods-Daigo_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Daigo_Tests"; path = Pods_Daigo_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D8904203B7552D5B9407CD0E4B91034 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		8FC9B5CF3AFFEE0D08A0BF07DC4F74EB /* LinkedList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LinkedList.swift; path = Sources/Internal/LinkedList.swift; sourceTree = "<group>"; };
 		928AA9C97E3501866280B864A56F5C60 /* Nuke-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Nuke-prefix.pch"; sourceTree = "<group>"; };
 		943390A85A892A4DA76C522FDFAB43B5 /* ImageProcessors+RoundedCorners.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ImageProcessors+RoundedCorners.swift"; path = "Sources/Core/Processing/ImageProcessors+RoundedCorners.swift"; sourceTree = "<group>"; };
 		98D1FFEC324445056330F4C9A74BE97F /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Sources/Internal/Extensions.swift; sourceTree = "<group>"; };
 		9BFFA2C0DBBF756737FC8DD839C5FD79 /* ImageTask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageTask.swift; path = Sources/Core/ImageTask.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A22C72BE150C7946FEF0207B9F743608 /* ImageEncoders+Default.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ImageEncoders+Default.swift"; path = "Sources/Core/Encoding/ImageEncoders+Default.swift"; sourceTree = "<group>"; };
 		A5E0434BFD150EBBBB271129EF00A09E /* Nuke-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Nuke-dummy.m"; sourceTree = "<group>"; };
 		A72FED148B2360171FCDFE1488AB9ABC /* Nuke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Nuke.release.xcconfig; sourceTree = "<group>"; };
 		A91CE337E21C09C9226EF5F8EE684467 /* Pods-Daigo_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Daigo_Example.modulemap"; sourceTree = "<group>"; };
+		AA314FCA44A7B2E921A1BF544EFAE1B6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		B04DBA0DEB822C34E1149EA742E0F5FF /* ImageDecoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDecoding.swift; path = Sources/Core/Decoding/ImageDecoding.swift; sourceTree = "<group>"; };
 		B350D7FC67E8661F6B766BBBA96E60B8 /* Allocations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Allocations.swift; path = Sources/Internal/Allocations.swift; sourceTree = "<group>"; };
 		B4C16C9CB05D8450CB0FB711D79C8D5F /* TaskFetchWithPublisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskFetchWithPublisher.swift; path = Sources/Core/Tasks/TaskFetchWithPublisher.swift; sourceTree = "<group>"; };
@@ -205,10 +202,13 @@
 		BEFFD06FC7CBA4FC14E69B4E6BCC2175 /* TaskLoadData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskLoadData.swift; path = Sources/Core/Tasks/TaskLoadData.swift; sourceTree = "<group>"; };
 		C004E768E5ED80F294102B5DD3180EC6 /* ImageDecoders+Default.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ImageDecoders+Default.swift"; path = "Sources/Core/Decoding/ImageDecoders+Default.swift"; sourceTree = "<group>"; };
 		C48B0DD9A7C68FC3C5A0EBDE8016C87B /* Pods-Daigo_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Daigo_Example-frameworks.sh"; sourceTree = "<group>"; };
-		C5DE7E4BA56F9F57761B94F27F1477B5 /* Daigo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Daigo-dummy.m"; sourceTree = "<group>"; };
 		C7C8F642540EEE8FDA56B798EB0B5598 /* TaskFetchDecodedImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskFetchDecodedImage.swift; path = Sources/Core/Tasks/TaskFetchDecodedImage.swift; sourceTree = "<group>"; };
 		C9BBDFD7BC91991DAA39E7FB5BCB0E76 /* Pods-Daigo_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Daigo_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D56C235F85FB05E1D9559FADA8602A0A /* DaigoViewBottomToTopLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DaigoViewBottomToTopLayout.swift; path = Daigo/Classes/DaigoViewBottomToTopLayout.swift; sourceTree = "<group>"; };
+		CAF00C44406D4E468AC8B94D474C4F2B /* DaigoCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DaigoCollectionView.swift; path = Daigo/Classes/DaigoCollectionView.swift; sourceTree = "<group>"; };
+		CCFB3A0BFC20444BAC2EF90BE797455B /* Daigo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Daigo.modulemap; sourceTree = "<group>"; };
+		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D3CBFAF4B10FC7DCBD50EA548861A7DE /* Daigo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Daigo-dummy.m"; sourceTree = "<group>"; };
+		D5BE4CEB2DCD351C9BE2BC9AF935A827 /* Daigo.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Daigo.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D61F7CCBCAFDA66FDC436C695F1C7BD3 /* ImagePublisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagePublisher.swift; path = Sources/Combine/ImagePublisher.swift; sourceTree = "<group>"; };
 		D6A902AE8589809EEC44EDDDF7C90D18 /* Pods-Daigo_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Daigo_Tests-dummy.m"; sourceTree = "<group>"; };
 		DA5831A4BB160D5B08DC205D7367CDF2 /* AssetType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetType.swift; path = Sources/Core/Decoding/AssetType.swift; sourceTree = "<group>"; };
@@ -221,12 +221,13 @@
 		E42BC2EBE7396DE2CC231DDC749D2DED /* ImageDecompression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDecompression.swift; path = Sources/Core/Processing/ImageDecompression.swift; sourceTree = "<group>"; };
 		E6A4D0254C11AD137DC72A0776068910 /* Pods-Daigo_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Daigo_Tests.modulemap"; sourceTree = "<group>"; };
 		E95542A5684A12B050E3F594192B4C40 /* Pods-Daigo_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Daigo_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E97C12649579BAB46DD4D56FE8FC7FEB /* Daigo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Daigo.release.xcconfig; sourceTree = "<group>"; };
 		E9E95E326E5A346AEE1BD086585A4B71 /* ImageProcessors+Circle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ImageProcessors+Circle.swift"; path = "Sources/Core/Processing/ImageProcessors+Circle.swift"; sourceTree = "<group>"; };
 		EA9F0F5B8CE7F03CADC585520480A186 /* TaskFetchOriginalImageData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskFetchOriginalImageData.swift; path = Sources/Core/Tasks/TaskFetchOriginalImageData.swift; sourceTree = "<group>"; };
+		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		F1EF7E316F7368CBC034BFE169CAFC6C /* ImagePipelineCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagePipelineCache.swift; path = Sources/Core/Caching/ImagePipelineCache.swift; sourceTree = "<group>"; };
 		F26B64347B1E02F456496988EDA28A7F /* Pods-Daigo_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Daigo_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		F665ACC0B4A818D12C440F2D0AC8AC67 /* Pods-Daigo_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Daigo_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F763B209AE8C5400D721B080F0DF8E53 /* DaigoCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DaigoCollectionView.swift; path = Daigo/Classes/DaigoCollectionView.swift; sourceTree = "<group>"; };
 		FD44CE5BE10C6A953E04556D89FF0041 /* ImageProcessors+Resize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ImageProcessors+Resize.swift"; path = "Sources/Core/Processing/ImageProcessors+Resize.swift"; sourceTree = "<group>"; };
 		FD73532A9AB7AB32F60341AE14AE496C /* ImageProcessors+Composition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ImageProcessors+Composition.swift"; path = "Sources/Core/Processing/ImageProcessors+Composition.swift"; sourceTree = "<group>"; };
 		FE9E765B91BF277CC0CAD6B849EA9B35 /* Combine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Combine.swift; path = Sources/Internal/Combine.swift; sourceTree = "<group>"; };
@@ -249,11 +250,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C938A5FE292CE4C52B6057B697AD724F /* Frameworks */ = {
+		BD92796DF385F3757998CB48160708A7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2D88DB04D8FCF151DADE8F2E77890A1 /* Foundation.framework in Frameworks */,
+				79B3882E7E7F40B8F58F1650A4338161 /* Foundation.framework in Frameworks */,
+				43DAFCC1121854A5491EF358CF3FA0A3 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,14 +270,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0266B2169855220D1604E51807A9538F /* Pod */ = {
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				443A130F999AB1EF8696C9CD5E558A90 /* Daigo.podspec */,
-				8D8904203B7552D5B9407CD0E4B91034 /* LICENSE */,
-				8A0F70D6A80C8B4A8FEDB080EBA8F3A6 /* README.md */,
+				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
 			);
-			name = Pod;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		29995F4272E60B710567C6C5BFA4A2C3 /* Pods-Daigo_Example */ = {
@@ -300,13 +300,27 @@
 			children = (
 				7DB2003C90667CB37D1A4F011292C490 /* Support Files */,
 			);
+			name = SwiftFormat;
 			path = SwiftFormat;
 			sourceTree = "<group>";
 		};
-		43201926DB8C6697F3650CCDC1181A5B /* Development Pods */ = {
+		45E519F2480E31C34C7F80C3EB37701F /* Daigo */ = {
 			isa = PBXGroup;
 			children = (
-				F054BBDCCCC850D9C15448DD4B737558 /* Daigo */,
+				CAF00C44406D4E468AC8B94D474C4F2B /* DaigoCollectionView.swift */,
+				4593007696912BF7FA8D24DB931790C1 /* DaigoViewBottomToTopLayout.swift */,
+				1E6062FCACDFBA36ACBBF43FEEE3630F /* DaigoViewController.swift */,
+				AB372A4FAFFDF592F7946EE911BFFAD9 /* Pod */,
+				7EAD669382C858B6F8591C866B2B5FC3 /* Support Files */,
+			);
+			name = Daigo;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		4AF16621F5995B4F75205B8639D776C1 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45E519F2480E31C34C7F80C3EB37701F /* Daigo */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -327,10 +341,11 @@
 			path = "Target Support Files/Pods-Daigo_Tests";
 			sourceTree = "<group>";
 		};
-		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
+				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -345,19 +360,29 @@
 			path = "../Target Support Files/SwiftFormat";
 			sourceTree = "<group>";
 		};
-		9C77AB713492C66FC0FA171A1781330D /* Support Files */ = {
+		7EAD669382C858B6F8591C866B2B5FC3 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3C85D99A43D7964E93E9FF5103FA9589 /* Daigo.modulemap */,
-				C5DE7E4BA56F9F57761B94F27F1477B5 /* Daigo-dummy.m */,
-				87E94ECC829CA1C12D759BDC657E4EAD /* Daigo-Info.plist */,
-				6E97BD1CE0BCFA16C6A5D461D6A383CF /* Daigo-prefix.pch */,
-				228FEE2C50F7E4419E1FC51BD17A7D11 /* Daigo-umbrella.h */,
-				1E9FA82CE2CD2D962E6B57275CF0D500 /* Daigo.debug.xcconfig */,
-				07A797C931044947EDF9EFB96C3FBA36 /* Daigo.release.xcconfig */,
+				CCFB3A0BFC20444BAC2EF90BE797455B /* Daigo.modulemap */,
+				D3CBFAF4B10FC7DCBD50EA548861A7DE /* Daigo-dummy.m */,
+				2865199C293244BF901C251251BF58DB /* Daigo-Info.plist */,
+				05B03628809A3691D8AF8446C08FEDB9 /* Daigo-prefix.pch */,
+				2F0C8485AC53963522D991F405FC34E9 /* Daigo-umbrella.h */,
+				4146409B699E585C8EC313E931E0736E /* Daigo.debug.xcconfig */,
+				E97C12649579BAB46DD4D56FE8FC7FEB /* Daigo.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/Daigo";
+			sourceTree = "<group>";
+		};
+		AB372A4FAFFDF592F7946EE911BFFAD9 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				D5BE4CEB2DCD351C9BE2BC9AF935A827 /* Daigo.podspec */,
+				AA314FCA44A7B2E921A1BF544EFAE1B6 /* LICENSE */,
+				05AC5E355FD30608BF50B34054F2A1DA /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		C91B8D61EE182EA191743F017B0D9D48 /* Targets Support Files */ = {
@@ -373,20 +398,12 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				43201926DB8C6697F3650CCDC1181A5B /* Development Pods */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				4AF16621F5995B4F75205B8639D776C1 /* Development Pods */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
 				D4273AF5536EA042D61F81B0C7D21A8D /* Pods */,
 				E3E1645EFDCBCE78646E71089D64B08F /* Products */,
 				C91B8D61EE182EA191743F017B0D9D48 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				578452D2E740E91742655AC8F1636D1F /* iOS */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D4273AF5536EA042D61F81B0C7D21A8D /* Pods */ = {
@@ -422,19 +439,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Nuke";
-			sourceTree = "<group>";
-		};
-		F054BBDCCCC850D9C15448DD4B737558 /* Daigo */ = {
-			isa = PBXGroup;
-			children = (
-				F763B209AE8C5400D721B080F0DF8E53 /* DaigoCollectionView.swift */,
-				D56C235F85FB05E1D9559FADA8602A0A /* DaigoViewBottomToTopLayout.swift */,
-				57A90AFD1D8FCCC97337FB4B26CC0E56 /* DaigoViewController.swift */,
-				0266B2169855220D1604E51807A9538F /* Pod */,
-				9C77AB713492C66FC0FA171A1781330D /* Support Files */,
-			);
-			name = Daigo;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		F5CD0C2B54A34A16680F3D0519B31772 /* Nuke */ = {
@@ -500,6 +504,7 @@
 				63AC749146168AE5F659DE8F8AB62BFC /* TaskLoadImage.swift */,
 				ECB085C7A4669B8DE307863D97F64520 /* Support Files */,
 			);
+			name = Nuke;
 			path = Nuke;
 			sourceTree = "<group>";
 		};
@@ -522,11 +527,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D3E7359B29CF650E9B61817A2D8BA3D5 /* Headers */ = {
+		89F00B03DDD2595D63790019CE378082 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8299BEB5A3CAFEE190A2F8D2FD8D0CC /* Daigo-umbrella.h in Headers */,
+				B593000F5256F0A342B26261A62FC594 /* Daigo-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,9 +595,9 @@
 			buildRules = (
 			);
 			dependencies = (
-				BE04E0C2DE37F04B147B3DCB4674E685 /* PBXTargetDependency */,
-				B89FCCCA9F2ACA58E392371387291ACA /* PBXTargetDependency */,
-				520866D7FC10148BEE742F735952E119 /* PBXTargetDependency */,
+				CD5A6F71A554C91CBC6BAB21648A6AA8 /* PBXTargetDependency */,
+				63087857ACD5D632B49A118228FDFF0D /* PBXTargetDependency */,
+				C7F0C4A8A596BC5321AEF92DECF73D69 /* PBXTargetDependency */,
 			);
 			name = "Pods-Daigo_Example";
 			productName = Pods_Daigo_Example;
@@ -601,12 +606,12 @@
 		};
 		F6869AC2056DCC8BF96A261FF20F6577 /* Daigo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D119CCDF3C03178DBE09FB461E0E7F08 /* Build configuration list for PBXNativeTarget "Daigo" */;
+			buildConfigurationList = 1E5D72E2BF0B4DA70B21E56CA0CEE10E /* Build configuration list for PBXNativeTarget "Daigo" */;
 			buildPhases = (
-				D3E7359B29CF650E9B61817A2D8BA3D5 /* Headers */,
-				3B5B75788A2F56FED4DDAEADB84443B9 /* Sources */,
-				C938A5FE292CE4C52B6057B697AD724F /* Frameworks */,
-				ACD4512B3E6C1264F9660FD8B173E7E6 /* Resources */,
+				89F00B03DDD2595D63790019CE378082 /* Headers */,
+				D5028C9CD5C21AB4D6555E9CCD903A12 /* Sources */,
+				BD92796DF385F3757998CB48160708A7 /* Frameworks */,
+				3CD6DB44064D80578D68B89FE5E51852 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -656,7 +661,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ACD4512B3E6C1264F9660FD8B173E7E6 /* Resources */ = {
+		3CD6DB44064D80578D68B89FE5E51852 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -746,17 +751,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3B5B75788A2F56FED4DDAEADB84443B9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FC960C588328BAB8FE1A3C027244DEF9 /* Daigo-dummy.m in Sources */,
-				14F866EA248B44BC2549AF092E745870 /* DaigoCollectionView.swift in Sources */,
-				432EC8E5946FE23C6C6148FCF4EAAC99 /* DaigoViewBottomToTopLayout.swift in Sources */,
-				57E758A241F75754603373C4EAD52F5C /* DaigoViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		42BADA816B60B3C021BEBE2F0615EEF6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -773,14 +767,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D5028C9CD5C21AB4D6555E9CCD903A12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74F081E38799ECD8614E7B962C75C858 /* Daigo-dummy.m in Sources */,
+				0035039855B43C3437CB531FA6786272 /* DaigoCollectionView.swift in Sources */,
+				F3D4AB8984D2A4153DF31E4DAE19EACD /* DaigoViewBottomToTopLayout.swift in Sources */,
+				327D23C0CED2F9978E66745BA4E0D722 /* DaigoViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		520866D7FC10148BEE742F735952E119 /* PBXTargetDependency */ = {
+		63087857ACD5D632B49A118228FDFF0D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SwiftFormat;
-			target = 1CD0618C486973D5588EF20D2E8C0AEA /* SwiftFormat */;
-			targetProxy = 0A969916CF1220CB86F747FF1B733804 /* PBXContainerItemProxy */;
+			name = Nuke;
+			target = 062A64896E847A6749F58B6BA9A931B1 /* Nuke */;
+			targetProxy = 6CF9CF2A6D5337DAC8C4233FBA2D8106 /* PBXContainerItemProxy */;
 		};
 		87F29DCD6AFA0711A01B27731A2F6F9B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -788,17 +793,17 @@
 			target = ECC35187B27C4EA3E7E887E2C6C4233C /* Pods-Daigo_Example */;
 			targetProxy = 0F229A09AFCA2D1BD8718D522A05850F /* PBXContainerItemProxy */;
 		};
-		B89FCCCA9F2ACA58E392371387291ACA /* PBXTargetDependency */ = {
+		C7F0C4A8A596BC5321AEF92DECF73D69 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Nuke;
-			target = 062A64896E847A6749F58B6BA9A931B1 /* Nuke */;
-			targetProxy = 5A42BF37D73D05A15A93C9DB1A7F4307 /* PBXContainerItemProxy */;
+			name = SwiftFormat;
+			target = 1CD0618C486973D5588EF20D2E8C0AEA /* SwiftFormat */;
+			targetProxy = 7881A0AA9D687FB70DB216A62A4A6E5C /* PBXContainerItemProxy */;
 		};
-		BE04E0C2DE37F04B147B3DCB4674E685 /* PBXTargetDependency */ = {
+		CD5A6F71A554C91CBC6BAB21648A6AA8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Daigo;
 			target = F6869AC2056DCC8BF96A261FF20F6577 /* Daigo */;
-			targetProxy = 1F1DD5D4DEADAF11759FDBFF75456F9E /* PBXContainerItemProxy */;
+			targetProxy = 8BB9B8082210B4ACCE0F21974FF10367 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -861,39 +866,6 @@
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		2A80FB78E7E7DA34F5514D320B7D76BB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07A797C931044947EDF9EFB96C3FBA36 /* Daigo.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Daigo/Daigo-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Daigo/Daigo-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Daigo/Daigo.modulemap";
-				PRODUCT_MODULE_NAME = Daigo;
-				PRODUCT_NAME = Daigo;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -1066,6 +1038,38 @@
 			};
 			name = Debug;
 		};
+		966C37B5E19E5DC48DE9C18698188E99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4146409B699E585C8EC313E931E0736E /* Daigo.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Daigo/Daigo-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Daigo/Daigo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Daigo/Daigo.modulemap";
+				PRODUCT_MODULE_NAME = Daigo;
+				PRODUCT_NAME = Daigo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1121,9 +1125,43 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		C8F82D5AE658E482A5CCD91BDF20E448 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E97C12649579BAB46DD4D56FE8FC7FEB /* Daigo.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Daigo/Daigo-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Daigo/Daigo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Daigo/Daigo.modulemap";
+				PRODUCT_MODULE_NAME = Daigo;
+				PRODUCT_NAME = Daigo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -1159,38 +1197,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		D9471B98E1423B057FE3D2E0728483E1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E9FA82CE2CD2D962E6B57275CF0D500 /* Daigo.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Daigo/Daigo-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Daigo/Daigo-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Daigo/Daigo.modulemap";
-				PRODUCT_MODULE_NAME = Daigo;
-				PRODUCT_NAME = Daigo;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		F5308D8307FC2D76BA0203FEAFB77AF5 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1230,6 +1236,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1E5D72E2BF0B4DA70B21E56CA0CEE10E /* Build configuration list for PBXNativeTarget "Daigo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				966C37B5E19E5DC48DE9C18698188E99 /* Debug */,
+				C8F82D5AE658E482A5CCD91BDF20E448 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3C8A939029B91142C0BD4FED6AF32B4C /* Build configuration list for PBXNativeTarget "Pods-Daigo_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1271,15 +1286,6 @@
 			buildConfigurations = (
 				7F8F44BB93F45BC82B6B6F5F4AD9A363 /* Debug */,
 				F5308D8307FC2D76BA0203FEAFB77AF5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D119CCDF3C03178DBE09FB461E0E7F08 /* Build configuration list for PBXNativeTarget "Daigo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D9471B98E1423B057FE3D2E0728483E1 /* Debug */,
-				2A80FB78E7E7DA34F5514D320B7D76BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

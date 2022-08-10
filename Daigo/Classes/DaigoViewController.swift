@@ -12,9 +12,17 @@ public protocol DIGViewerDelegate: AnyObject {
     /// return true -> toggle header, return false -> don't toggle header
     func daigoCollectionView(_ collectionView: DaigoCollectionView, didSelectIndex indexPath: IndexPath) -> Bool
     func aspectRatio(cellForItemAt indexPath: IndexPath) -> CGFloat?
+    func daigoCollectionView(_ collectionView: DaigoCollectionView, didBoundsEdge bounds: DaigoViewController.BoundsEdge)
 }
 
 open class DaigoViewController: UIViewController {
+    public enum BoundsEdge {
+        case top
+        case right
+        case left
+        case bottom
+    }
+
     public let scrollView: UIScrollView = {
         let scrollView = UIScrollView()
         scrollView.contentInsetAdjustmentBehavior = .never
@@ -162,6 +170,14 @@ extension DaigoViewController: UIScrollViewDelegate {
         let indexPath = collectionView.indexPathForItem(at: visiblePoint) ?? IndexPath()
         delegate?.daigoCollectionView(collectionView, visibleIndex: indexPath)
         currentIndex = indexPath.row
+    }
+
+    public func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        if scrollView.contentOffset.y + scrollView.frame.size.height > scrollView.contentSize.height + 60 {
+            delegate?.daigoCollectionView(collectionView, didBoundsEdge: .bottom)
+        } else if scrollView.contentOffset.y < -60 {
+            delegate?.daigoCollectionView(collectionView, didBoundsEdge: .top)
+        }
     }
 
     public func viewForZooming(in scrollView: UIScrollView) -> UIView? {

@@ -1,5 +1,5 @@
 PODS:
-  - Daigo (0.1.0)
+  - Daigo (0.1.1)
   - Nuke (10.7.1)
   - SwiftFormat/CLI (0.49.11)
 
@@ -18,7 +18,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Daigo: 993626863ddd3fe5ffff1c0882f5d3c6b66bb4b0
+  Daigo: 88fc1e7ce1cb6e13c09b8067520345a953cf2a19
   Nuke: 279f17a599fd1c83cf51de5e0e1f2db143a287b0
   SwiftFormat: 281a1e03e57c55e788ad1653fd1aa174e90624d1
 

@@ -1,7 +1,7 @@
 {
   "name": "Daigo",
-  "version": "0.1.0",
-  "summary": "A short description of Daigo.",
+  "version": "0.1.1",
+  "summary": "Daigo is vertical viewer",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/yuuki-noda/Daigo",
   "license": {
@@ -13,10 +13,13 @@
   },
   "source": {
     "git": "https://github.com/yuuki-noda/Daigo.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
+  "swift_versions": "4.0",
   "platforms": {
     "ios": "13.0"
   },
-  "source_files": "Daigo/Classes/**/*"
+  "source_files": "Daigo/Classes/**/*",
+  "frameworks": "UIKit",
+  "swift_version": "4.0"
 }

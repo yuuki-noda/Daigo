@@ -98,6 +98,10 @@ extension ViewController {
 }
 
 extension ViewController: DIGViewerDelegate {
+    func daigoCollectionView(_ collectionView: DaigoCollectionView, didBoundsEdge bounds: DaigoViewController.BoundsEdge) {
+        print("didBounds: \(bounds)")
+    }
+
     func aspectRatio(cellForItemAt indexPath: IndexPath) -> CGFloat? {
         guard items.count > indexPath.row else { return nil }
         return items[indexPath.row].aspectRatio
