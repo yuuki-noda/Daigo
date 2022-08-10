@@ -68,6 +68,14 @@ Return the aspect ratio of the image.
 
 If nil, the cell size will be the same as UIScreen.main.bouds.size.
 
+```swift
+func daigoCollectionView(_ collectionView: DaigoCollectionView, didBoundsEdge bounds: DaigoViewController.BoundsEdge)
+```
+
+didBoundsEdge contains the bounds position.
+
+This function uses scrollViewDidEndDragging to notify the direction of bounds.
+
 ## Installation
 
 Daigo is available through [CocoaPods](https://cocoapods.org).
